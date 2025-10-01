@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,24 +7,109 @@
     <title>COURS SIO WEB | CSS</title>
   </head>
   <body>
-    <h1>Introduction à CSS</h1>
-    <p>
-      CSS (Cascading Style Sheets) est un langage de style utilisé pour décrire
-      la présentation d'un document HTML. Il permet de contrôler l'apparence
-      visuelle des éléments d'une page web, tels que les couleurs, les polices,
-      les marges et les dispositions.
-    </p>
-    <p>
-      CSS a été développé par le W3C (World Wide Web Consortium) et a été publié
-      pour la première fois en 1996. Depuis lors, il a évolué pour inclure de
-      nombreuses fonctionnalités avancées, telles que les animations, les
-      transitions et les grilles.
-    </p>
-    <p>
-      L'utilisation de CSS permet de séparer le contenu d'une page web de sa
-      présentation, ce qui facilite la maintenance et la mise à jour des styles.
-      De plus, CSS permet d'appliquer des styles de manière cohérente sur
-      l'ensemble d'un site web.
-    </p>
+    <header>
+      <nav class="site-nav">
+        <div class="logo">Logo</div>
+        <ul class="menu" id="menu">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html" aria-current="page">CSS</a></li>
+          <li><a href="linux_command_line.html">Commandes Linux</a></li>
+          <li><a href="en_construction.html">Autres pages</a></li>
+        </ul>
+        <div
+          class="burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Introduction à CSS</h1>
+      <p>
+        CSS (Cascading Style Sheets) est un langage de style utilisé pour
+        décrire la présentation d'un document HTML. Il permet de contrôler
+        l'apparence visuelle des éléments d'une page web, tels que les couleurs,
+        les polices, les marges et les dispositions.
+      </p>
+      <p>
+        CSS a été développé par le W3C (World Wide Web Consortium) et a été
+        publié pour la première fois en 1996. Depuis lors, il a évolué pour
+        inclure de nombreuses fonctionnalités avancées, telles que les
+        animations, les transitions et les grilles.
+      </p>
+      <section>
+        <h2>Pourquoi utiliser CSS ?</h2>
+        <ul>
+          <li>Séparer la structure (HTML) de la présentation.</li>
+          <li>Gagner du temps en réutilisant les mêmes styles.</li>
+          <li>Faciliter la maintenance et l'évolution d'un site web.</li>
+          <li>Créer des interfaces responsives adaptées à tous les écrans.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Ressources utiles</h2>
+        <ul>
+          <li>
+            <a href="https://developer.mozilla.org/fr/docs/Web/CSS"
+              >Documentation MDN sur CSS</a
+            >
+          </li>
+          <li>
+            <a href="https://css-tricks.com/">CSS Tricks - Guides et astuces</a>
+          </li>
+          <li>
+            <a href="https://getbootstrap.com/">Framework Bootstrap</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>&copy; 2023 COURS SIO WEB LDV Melun. Tous droits réservés.</p>
+      <section class="footer-contact">
+        <h2>Contact</h2>
+        <form action="#" method="post" class="contact-form">
+          <div class="contact-field">
+            <label for="contact-name-css">Nom</label>
+            <input
+              type="text"
+              id="contact-name-css"
+              name="contact-name"
+              placeholder="Votre nom"
+              required
+            />
+          </div>
+          <div class="contact-field">
+            <label for="contact-email-css">Email</label>
+            <input
+              type="email"
+              id="contact-email-css"
+              name="contact-email"
+              placeholder="nom@example.com"
+              required
+            />
+          </div>
+          <div class="contact-field">
+            <label for="contact-message-css">Message</label>
+            <textarea
+              id="contact-message-css"
+              name="contact-message"
+              rows="3"
+              placeholder="Votre message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </footer>
+    <script src="../js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <title>COURS SIO WEB | Page en construction</title>
+    <style>
+      .construction {
+        min-height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 40px 20px;
+      }
+      .construction p {
+        max-width: 420px;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <div class="logo">Logo</div>
+        <ul class="menu" id="menu">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="linux_command_line.html">Commandes Linux</a></li>
+          <li>
+            <a href="en_construction.html" aria-current="page">Autres pages</a>
+          </li>
+        </ul>
+        <div
+          class="burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <main class="construction">
+      <h1>Cette page est en construction</h1>
+      <p>
+        Nous travaillons activement sur cette section afin de vous proposer un
+        contenu complet très bientôt. Merci pour votre patience et à très
+        vite !
+      </p>
+      <a class="construction-link" href="../index.html">Retour à l'accueil</a>
+    </main>
+    <footer class="site-footer">
+      <p>&copy; 2023 COURS SIO WEB LDV Melun. Tous droits réservés.</p>
+      <section class="footer-contact">
+        <h2>Contact</h2>
+        <form action="#" method="post" class="contact-form">
+          <div class="contact-field">
+            <label for="contact-name-construct">Nom</label>
+            <input
+              type="text"
+              id="contact-name-construct"
+              name="contact-name"
+              placeholder="Votre nom"
+              required
+            />
+          </div>
+          <div class="contact-field">
+            <label for="contact-email-construct">Email</label>
+            <input
+              type="email"
+              id="contact-email-construct"
+              name="contact-email"
+              placeholder="nom@example.com"
+              required
+            />
+          </div>
+          <div class="contact-field">
+            <label for="contact-message-construct">Message</label>
+            <textarea
+              id="contact-message-construct"
+              name="contact-message"
+              rows="3"
+              placeholder="Votre message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

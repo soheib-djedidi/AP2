@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <link rel="stylesheet" href="../css/linux_command_line.css" />
+    <title>COURS SIO WEB | Commandes Linux</title>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <div class="logo">Logo</div>
+        <ul class="menu" id="menu">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li>
+            <a href="linux_command_line.html" aria-current="page"
+              >Commandes Linux</a
+            >
+          </li>
+          <li><a href="en_construction.html">Autres pages</a></li>
+        </ul>
+        <div
+          class="burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Mémento des commandes Linux</h1>
+      <p>
+        Ce mémento regroupe les commandes Linux essentielles vues en cours de
+        SISR. Il vous aidera à réviser la navigation dans l'arborescence, la
+        gestion des fichiers et les droits.
+      </p>
+      <table>
+        <caption>
+          Commandes principales de la ligne de commande Linux
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Commande</th>
+            <th scope="col">Description</th>
+            <th scope="col">Exemple d'utilisation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>ls</code></td>
+            <td>Liste les fichiers et dossiers du répertoire courant.</td>
+            <td><code>ls -l</code></td>
+          </tr>
+          <tr>
+            <td><code>cd</code></td>
+            <td>Change de répertoire.</td>
+            <td><code>cd /home/user</code></td>
+          </tr>
+          <tr>
+            <td><code>pwd</code></td>
+            <td>Affiche le chemin du répertoire courant.</td>
+            <td><code>pwd</code></td>
+          </tr>
+          <tr>
+            <td><code>mkdir</code></td>
+            <td>Crée un nouveau dossier.</td>
+            <td><code>mkdir exercices</code></td>
+          </tr>
+          <tr>
+            <td><code>touch</code></td>
+            <td>Crée un fichier vide ou met à jour sa date de modification.</td>
+            <td><code>touch rapport.txt</code></td>
+          </tr>
+          <tr>
+            <td><code>cp</code></td>
+            <td>Copie des fichiers ou dossiers.</td>
+            <td><code>cp source.txt sauvegardes/source.txt</code></td>
+          </tr>
+          <tr>
+            <td><code>mv</code></td>
+            <td>Déplace ou renomme des fichiers et dossiers.</td>
+            <td><code>mv brouillon.txt docs/brouillon.txt</code></td>
+          </tr>
+          <tr>
+            <td><code>rm</code></td>
+            <td>Supprime des fichiers.</td>
+            <td><code>rm ancien.log</code></td>
+          </tr>
+          <tr>
+            <td><code>chmod</code></td>
+            <td>Modifie les permissions d'un fichier ou d'un dossier.</td>
+            <td><code>chmod 755 script.sh</code></td>
+          </tr>
+          <tr>
+            <td><code>man</code></td>
+            <td>Affiche le manuel d'une commande.</td>
+            <td><code>man ls</code></td>
+          </tr>
+        </tbody>
+      </table>
+      <section>
+        <h2>Astuce</h2>
+        <p>
+          Combinez ces commandes avec la touche <kbd>Tab</kbd> pour bénéficier de
+          l'autocomplétion et gagner en efficacité sur la ligne de commande.
+        </p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>&copy; 2023 COURS SIO WEB LDV Melun. Tous droits réservés.</p>
+      <section class="footer-contact">
+        <h2>Contact</h2>
+        <form action="#" method="post" class="contact-form">
+          <div class="contact-field">
+            <label for="contact-name-linux">Nom</label>
+            <input
+              type="text"
+              id="contact-name-linux"
+              name="contact-name"
+              placeholder="Votre nom"
+              required
+            />
+          </div>
+          <div class="contact-field">
+            <label for="contact-email-linux">Email</label>
+            <input
+              type="email"
+              id="contact-email-linux"
+              name="contact-email"
+              placeholder="nom@example.com"
+              required
+            />
+          </div>
+          <div class="contact-field">
+            <label for="contact-message-linux">Message</label>
+            <textarea
+              id="contact-message-linux"
+              name="contact-message"
+              rows="3"
+              placeholder="Votre message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

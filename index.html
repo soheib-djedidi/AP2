@@ -63,21 +63,13 @@
           Un identifiant (id) est un sélecteur unique qui permet de cibler un élément HTML spécifique. Contrairement à une classe, un id doit être unique dans le document et est défini dans le CSS avec un dièse (#) suivi du nom de l'id.
           -->
         <div class="logo">Logo</div>
-        <div class="menu" id="menu">
-          <a href="index.html">Accueil</a>
-          <a href="pages/html.html">HTML</a>
-          <a href="pages/css.html">CSS</a>
-          <a href="pages/javascript.html">JavaScript</a>
-          <a href="pages/php.html">PHP</a>
-          <a href="pages/kotlin.html">Kotlin</a>
-          <a href="pages/python.html">Python</a>
-          <a href="pages/sql.html">SQL</a>
-          <a href="pages/angular.html">Angular</a>
-          <a href="pages/git.html">Git</a>
-          <a href="pages/github.html">GitHub</a>
-          <a href="pages/linux.html">Linux</a>
-          <a href="pages/linux_command_line.html">Ligne de commande Linux</a>
-        </div>
+        <ul class="menu" id="menu">
+          <li><a href="index.html" aria-current="page">Accueil</a></li>
+          <li><a href="pages/html.html">HTML</a></li>
+          <li><a href="pages/css.html">CSS</a></li>
+          <li><a href="pages/linux_command_line.html">Commandes Linux</a></li>
+          <li><a href="pages/en_construction.html">Autres pages</a></li>
+        </ul>
 
         <!--
           La div avec la classe "burger" représente le menu burger, qui est un élément de navigation compact pour les écrans plus petits.
@@ -148,7 +140,7 @@
               éléments d'une page, tels que les titres, les paragraphes, les
               liens, les images et bien d'autres contenus.
             </p>
-            <button><a href="html.html">En savoir plus</a></button>
+            <button><a href="pages/html.html">En savoir plus</a></button>
           </article>
           <!-- article sur le css-->
           <article>
@@ -160,7 +152,7 @@
               l'apparence des éléments sur une page web, tels que les couleurs,
               les polices, les marges et la disposition.
             </p>
-            <button><a href="css.html">En savoir plus</a></button>
+            <button><a href="pages/css.html">En savoir plus</a></button>
           </article>
           <!-- article sur le javascript-->
           <article>
@@ -172,7 +164,7 @@
               Il est souvent utilisé pour créer des animations, des formulaires
               interactifs et des mises à jour de contenu en temps réel.
             </p>
-            <button><a href="javascript.html">En savoir plus</a></button>
+            <button><a href="pages/en_construction.html">En savoir plus</a></button>
           </article>
         </div>
         <h2>Les Langages Backend</h2>
@@ -193,7 +185,7 @@
               créer des pages web dynamiques et interactives en s'intégrant
               facilement avec des bases de données.
             </p>
-            <button><a href="php.html">En savoir plus</a></button>
+            <button><a href="pages/en_construction.html">En savoir plus</a></button>
           </article>
           <!-- article sur le kotlin-->
           <article>
@@ -208,7 +200,7 @@
               sécurisé que Java, tout en conservant la puissance et la
               flexibilité de la plateforme Java.
             </p>
-            <button><a href="kotlin.html">En savoir plus</a></button>
+            <button><a href="pages/en_construction.html">En savoir plus</a></button>
           </article>
           <!-- article sur le python-->
           <article>
@@ -222,7 +214,7 @@
               domaines, tels que le développement web, l'analyse de données,
               l'intelligence artificielle et l'automatisation des tâches.
             </p>
-            <button><a href="python.html">En savoir plus</a></button>
+            <button><a href="pages/en_construction.html">En savoir plus</a></button>
           </article>
           <!-- article sur le SQL-->
           <article>
@@ -235,7 +227,7 @@
               création, la lecture, la mise à jour et la suppression de données
               dans une base de données.
             </p>
-            <button><a href="sql.html">En savoir plus</a></button>
+            <button><a href="pages/en_construction.html">En savoir plus</a></button>
           </article>
         </div>
       </section>
@@ -260,7 +252,7 @@
             avancées telles que la liaison de données bidirectionnelle, la
             gestion des composants et l'injection de dépendances.
           </p>
-          <button><a href="angular.html">En savoir plus</a></button>
+          <button><a href="pages/en_construction.html">En savoir plus</a></button>
         </article>
       </section>
       <!--
@@ -286,7 +278,7 @@
               dans le développement logiciel pour gérer le code source et
               faciliter le travail en équipe.
             </p>
-            <button><a href="git.html">En savoir plus</a></button>
+            <button><a href="pages/en_construction.html">En savoir plus</a></button>
           </article>
           <!-- article sur GitHub-->
           <article>
@@ -300,7 +292,7 @@
               la gestion des problèmes, les demandes de tirage (pull requests)
               et l'intégration continue.
             </p>
-            <button><a href="github.html">En savoir plus</a></button>
+            <button><a href="pages/en_construction.html">En savoir plus</a></button>
           </article>
 
           <!-- article sur linux-->
@@ -314,7 +306,7 @@
               sa stabilité, sa sécurité et sa flexibilité, ce qui en fait un
               choix populaire pour les développeurs et les entreprises.
             </p>
-            <button><a href="linux.html">En savoir plus</a></button>
+            <button><a href="pages/en_construction.html">En savoir plus</a></button>
           </article>
           <!-- article sur ligne de commande linux-->
           <article>
@@ -330,7 +322,7 @@
               rapidité et son efficacité.
             </p>
             <button>
-              <a href="linux_command_line.html">En savoir plus</a>
+              <a href="pages/linux_command_line.html">En savoir plus</a>
             </button>
           </article>
         </div>
@@ -341,8 +333,44 @@
       Il contient généralement des informations supplémentaires comme les droits d'auteur, les liens vers les politiques de confidentialité, etc.
       Ici, il affiche un message de droits d'auteur.
     -->
-    <footer>
+    <footer class="site-footer">
       <p>&copy; 2023 COURS SIO WEB LDV Melun. Tous droits réservés.</p>
+      <section class="footer-contact">
+        <h2>Contact</h2>
+        <form action="#" method="post" class="contact-form">
+          <div class="contact-field">
+            <label for="contact-name-home">Nom</label>
+            <input
+              type="text"
+              id="contact-name-home"
+              name="contact-name"
+              placeholder="Votre nom"
+              required
+            />
+          </div>
+          <div class="contact-field">
+            <label for="contact-email-home">Email</label>
+            <input
+              type="email"
+              id="contact-email-home"
+              name="contact-email"
+              placeholder="nom@example.com"
+              required
+            />
+          </div>
+          <div class="contact-field">
+            <label for="contact-message-home">Message</label>
+            <textarea
+              id="contact-message-home"
+              name="contact-message"
+              rows="3"
+              placeholder="Votre message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
     </footer>
     <!-- script en bas de page aprés le footer-->
     <script src="js/main.js"></script>
