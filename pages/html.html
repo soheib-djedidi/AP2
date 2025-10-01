@@ -7,25 +7,16 @@
     <title>COURS SIO WEB | HTML</title>
   </head>
   <body>
-    <!-- En-tête de la page -->
     <header>
-      <nav>
+      <nav class="site-nav">
         <div class="logo">Logo</div>
-        <div class="menu" id="menu">
-          <a href="../index.html">Accueil</a>
-          <a href="html.html">HTML</a>
-          <a href="css.html">CSS</a>
-          <a href="javascript.html">JavaScript</a>
-          <a href="php.html">PHP</a>
-          <a href="kotlin.html">Kotlin</a>
-          <a href="python.html">Python</a>
-          <a href="sql.html">SQL</a>
-          <a href="angular.html">Angular</a>
-          <a href="git.html">Git</a>
-          <a href="github.html">GitHub</a>
-          <a href="linux.html">Linux</a>
-          <a href="linux_command_line.html">Ligne de commande Linux</a>
-        </div>
+        <ul class="menu" id="menu">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="linux_command_line.html">Commandes Linux</a></li>
+          <li><a href="en_construction.html">Autres pages</a></li>
+        </ul>
         <div
           class="burger"
           id="burger"
@@ -40,7 +31,6 @@
         </div>
       </nav>
     </header>
-    <!-- Contenu principal -->
     <main>
       <h1>Introduction à HTML</h1>
       <p>
@@ -62,7 +52,6 @@
         pages web. Il permet de structurer du contenu en utilisant des balises
         et d'ajouter des attributs pour enrichir ces éléments.
       </p>
-      <!-- section explication balise et attribut  -->
       <section>
         <h2>Les balises HTML</h2>
         <p>
@@ -109,6 +98,81 @@
             </code>
         </pre>
       </section>
+      <section aria-labelledby="formulaire-html">
+        <h2 id="formulaire-html">Formulaire d'exemple HTML</h2>
+        <!--
+          La balise <form> regroupe l'ensemble des champs du formulaire.
+          L'attribut action="#" indique que le formulaire n'est pas encore relié à un serveur :
+          les données resteront sur la page pour l'exercice.
+          L'attribut method="post" précise que les données seraient envoyées au serveur dans le corps de la requête.
+        -->
+        <form action="#" method="post" class="example-form">
+          <!-- La balise <fieldset> permet de regrouper des champs liés dans le formulaire. -->
+          <fieldset>
+            <legend>Partagez votre expérience</legend>
+            <!--
+              La balise <label> associe un texte à un champ de formulaire pour l'accessibilité.
+              L'attribut for="full-name" relie cette étiquette au champ dont l'identifiant est "full-name".
+            -->
+            <label for="full-name">Nom</label>
+            <!--
+              La balise <input> crée un champ de saisie.
+              L'attribut type="text" indique qu'il s'agit d'un champ de texte.
+              L'attribut id="full-name" identifie le champ de manière unique pour les scripts et les labels.
+              L'attribut name="full-name" détermine la clé utilisée lors de l'envoi des données.
+              L'attribut placeholder fournit une indication de saisie.
+              L'attribut required impose que le champ soit renseigné avant la soumission.
+            -->
+            <input
+              type="text"
+              id="full-name"
+              name="full-name"
+              placeholder="Votre nom"
+              required
+            />
+            <!-- Le champ suivant recueille l'adresse e-mail de l'utilisateur. -->
+            <label for="email">
+              Adresse e-mail
+            </label>
+            <!--
+              type="email" valide le format de l'adresse.
+              name="email" servira de clé lors de l'envoi des données.
+              required garantit que l'utilisateur fournisse une adresse de contact.
+            -->
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="nom@example.com"
+              required
+            />
+            <!--
+              La balise <textarea> crée une zone de texte multilignes.
+              Les attributs id et name fonctionnent comme pour <input>.
+              rows définit la hauteur initiale en nombre de lignes.
+            -->
+            <label for="comments">Commentaires</label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="4"
+              placeholder="Partagez vos impressions sur ce cours"
+            ></textarea>
+            <!--
+              La balise <button> crée le bouton d'envoi du formulaire.
+              L'attribut type="submit" déclenche l'envoi des données.
+            -->
+            <button type="submit">Envoyer</button>
+          </fieldset>
+        </form>
+        <!--
+          Rappel sur les attributs essentiels :
+          - action : URL du traitement du formulaire.
+          - method : méthode HTTP utilisée pour transmettre les données.
+          - required : rend la saisie obligatoire avant l'envoi.
+          - name : identifie chaque donnée envoyée au serveur.
+        -->
+      </section>
       <section>
         <h2>Ressources supplémentaires</h2>
         <ul>
@@ -128,12 +192,53 @@
         </ul>
       </section>
     </main>
-    <!-- footer -->
-    <footer>
-      <!-- définition des droits d'auteur -->
+    <footer class="site-footer">
       <p>&copy; 2023 COURS SIO WEB LDV Melun. Tous droits réservés.</p>
+      <section class="footer-contact">
+        <h2>Contact</h2>
+        <!--
+          Formulaire de contact affiché dans le pied de page.
+          action="#" : les données restent sur le site tant qu'aucun traitement n'est défini.
+          method="post" : utiliserait la méthode POST pour envoyer les données au serveur.
+        -->
+        <form action="#" method="post" class="contact-form">
+          <div class="contact-field">
+            <label for="contact-name">Nom</label>
+            <!-- name="contact-name" identifie la valeur envoyée, required force la saisie. -->
+            <input
+              type="text"
+              id="contact-name"
+              name="contact-name"
+              placeholder="Votre nom"
+              required
+            />
+          </div>
+          <div class="contact-field">
+            <label for="contact-email">Email</label>
+            <!-- type="email" valide le format de l'adresse, required impose la présence d'un contact. -->
+            <input
+              type="email"
+              id="contact-email"
+              name="contact-email"
+              placeholder="nom@example.com"
+              required
+            />
+          </div>
+          <div class="contact-field">
+            <label for="contact-message">Message</label>
+            <!-- La zone de texte permet d'envoyer un message détaillé. -->
+            <textarea
+              id="contact-message"
+              name="contact-message"
+              rows="3"
+              placeholder="Votre message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
     </footer>
-    <!-- script -->
-    <script src="../js/script.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
