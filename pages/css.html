@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,24 +7,140 @@
     <title>COURS SIO WEB | CSS</title>
   </head>
   <body>
-    <h1>Introduction à CSS</h1>
-    <p>
-      CSS (Cascading Style Sheets) est un langage de style utilisé pour décrire
-      la présentation d'un document HTML. Il permet de contrôler l'apparence
-      visuelle des éléments d'une page web, tels que les couleurs, les polices,
-      les marges et les dispositions.
-    </p>
-    <p>
-      CSS a été développé par le W3C (World Wide Web Consortium) et a été publié
-      pour la première fois en 1996. Depuis lors, il a évolué pour inclure de
-      nombreuses fonctionnalités avancées, telles que les animations, les
-      transitions et les grilles.
-    </p>
-    <p>
-      L'utilisation de CSS permet de séparer le contenu d'une page web de sa
-      présentation, ce qui facilite la maintenance et la mise à jour des styles.
-      De plus, CSS permet d'appliquer des styles de manière cohérente sur
-      l'ensemble d'un site web.
-    </p>
+    <header>
+      <nav>
+        <div class="logo">Logo</div>
+        <div class="menu" id="menu">
+          <a href="../index.html">Accueil</a>
+          <a href="html.html">HTML</a>
+          <a href="css.html" aria-current="page">CSS</a>
+          <a href="linux_command_line.html">Commandes Linux</a>
+          <a href="en_construction.html">Autres pages</a>
+          <a href="dossier_remise.html">Dossier à remettre</a>
+        </div>
+        <div
+          class="burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Feuilles de style en cascade (CSS)</h1>
+        <p>
+          CSS (Cascading Style Sheets) est un langage conçu pour décrire la mise
+          en forme des documents HTML. Il permet de séparer le contenu de la
+          présentation visuelle.
+        </p>
+        <p>
+          En CSS, vous pouvez définir des règles de style pour des éléments
+          spécifiques ou des groupes d'éléments. Ces règles contrôlent la
+          couleur, la taille, les marges, les polices, et bien d'autres aspects.
+        </p>
+      </section>
+      <section>
+        <h2>Organisation d'une règle CSS</h2>
+        <p>Une règle CSS se compose de trois parties principales :</p>
+        <ul>
+          <li>Le sélecteur : l'élément HTML ciblé.</li>
+          <li>La propriété : la caractéristique à modifier.</li>
+          <li>La valeur : la nouvelle valeur appliquée à la propriété.</li>
+        </ul>
+        <pre>
+            <code>
+                p {
+                  color: #1d4ed8;
+                  font-size: 18px;
+                }
+            </code>
+        </pre>
+        <p>
+          Dans l'exemple ci-dessus, le sélecteur est <code>p</code>, les
+          propriétés sont <code>color</code> et <code>font-size</code>, et les
+          valeurs respectives sont <code>#1d4ed8</code> et <code>18px</code>.
+        </p>
+      </section>
+      <section>
+        <h2>Boîte CSS (CSS Box Model)</h2>
+        <p>
+          Le modèle de boîte définit la manière dont la taille et l'espace d'un
+          élément sont calculés. Chaque élément est considéré comme une boîte
+          comprenant :
+        </p>
+        <ul>
+          <li>Le contenu (<em>content</em>)</li>
+          <li>Le remplissage (<em>padding</em>)</li>
+          <li>La bordure (<em>border</em>)</li>
+          <li>La marge (<em>margin</em>)</li>
+        </ul>
+        <p>
+          Comprendre le box model est essentiel pour créer des mises en page
+          précises et responsive.
+        </p>
+      </section>
+      <section>
+        <h2>Bonnes pratiques CSS</h2>
+        <ul class="checklist">
+          <li>Utiliser des classes explicites pour décrire la fonction d'un bloc.</li>
+          <li>Regrouper les couleurs et les typographies dans des variables.</li>
+          <li>Limiter la profondeur des sélecteurs pour conserver des styles lisibles.</li>
+          <li>Documenter les zones complexes du code avec des commentaires.</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <section
+        class="contact-footer"
+        aria-labelledby="footer-contact-title"
+      >
+        <h2 id="footer-contact-title">Contactez l'équipe pédagogique</h2>
+        <form action="#" method="post" class="contact-form">
+          <label for="footer-name-css"
+            >Nom
+            <input
+              id="footer-name-css"
+              name="footer-name"
+              type="text"
+              placeholder="Votre nom"
+              required
+            />
+          </label>
+          <label for="footer-email-css"
+            >Email
+            <input
+              id="footer-email-css"
+              name="footer-email"
+              type="email"
+              placeholder="vous@example.com"
+              required
+            />
+          </label>
+          <label for="footer-message-css"
+            >Message
+            <textarea
+              id="footer-message-css"
+              name="footer-message"
+              placeholder="Expliquez votre besoin"
+              required
+            ></textarea>
+          </label>
+          <button type="submit">Envoyer</button>
+        </form>
+        <p class="footer-note">
+          Ajoutez vos captures d'écran uniquement dans le PDF de restitution
+          pour éviter les fichiers binaires dans le dépôt.
+        </p>
+      </section>
+      <p>&copy; 2024 COURS SIO WEB LDV Melun. Tous droits réservés.</p>
+    </footer>
+    <script src="../js/main.js"></script>
   </body>
 </html>

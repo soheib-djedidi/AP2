@@ -1,26 +1,22 @@
 <!DOCTYPE html>
-
 <html lang="fr">
   <head>
     <!-- commentaires en html : avec win CTRL + / en linux CTRL+SHIFT+/ (/ à droite de la barre d'espace)-->
     <!--
-    le header: 
-    Ce composant représente l'en-tête principal de l'application. 
-    Il inclut généralement le logo, la navigation principale, et éventuellement des actions utilisateur 
-    telles que la connexion ou l'accès au profil. 
-    Utilisez ce composant pour afficher les éléments de navigation globaux et renforcer l'identité visuelle de l'application.
--->
+    le header:
+    Ce composant représente l'en-tête principal de l'application.
+    Il inclut généralement le logo, la navigation principale, et éventuellement des actions utilisateur
+    telles que la connexion ou l'accès au profil.
+    Utilisez ce composant pour afficher les éléments de navigation globaux et renforcer l'identité visuelle de l'application.-->
 
     <!--
     <meta charset="UTF-8" /> :
-    Définit l'encodage des caractères du document en UTF-8, ce qui permet d'afficher correctement les caractères spéciaux et internationaux.
--->
+    Définit l'encodage des caractères du document en UTF-8, ce qui permet d'afficher correctement les caractères spéciaux et internationaux.-->
 
     <!--
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> :
-    Permet d'assurer que la page s'affiche correctement sur tous les appareils (responsive design) 
-    en adaptant la largeur de la page à celle de l'écran de l'utilisateur.
--->
+    Permet d'assurer que la page s'affiche correctement sur tous les appareils (responsive design)
+    en adaptant la largeur de la page à celle de l'écran de l'utilisateur.-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -64,19 +60,12 @@
           -->
         <div class="logo">Logo</div>
         <div class="menu" id="menu">
-          <a href="index.html">Accueil</a>
+          <a href="index.html" aria-current="page">Accueil</a>
           <a href="pages/html.html">HTML</a>
           <a href="pages/css.html">CSS</a>
-          <a href="pages/javascript.html">JavaScript</a>
-          <a href="pages/php.html">PHP</a>
-          <a href="pages/kotlin.html">Kotlin</a>
-          <a href="pages/python.html">Python</a>
-          <a href="pages/sql.html">SQL</a>
-          <a href="pages/angular.html">Angular</a>
-          <a href="pages/git.html">Git</a>
-          <a href="pages/github.html">GitHub</a>
-          <a href="pages/linux.html">Linux</a>
-          <a href="pages/linux_command_line.html">Ligne de commande Linux</a>
+          <a href="pages/linux_command_line.html">Commandes Linux</a>
+          <a href="pages/en_construction.html">Autres pages</a>
+          <a href="pages/dossier_remise.html">Dossier à remettre</a>
         </div>
 
         <!--
@@ -148,7 +137,7 @@
               éléments d'une page, tels que les titres, les paragraphes, les
               liens, les images et bien d'autres contenus.
             </p>
-            <button><a href="html.html">En savoir plus</a></button>
+            <button><a href="pages/html.html">En savoir plus</a></button>
           </article>
           <!-- article sur le css-->
           <article>
@@ -160,7 +149,7 @@
               l'apparence des éléments sur une page web, tels que les couleurs,
               les polices, les marges et la disposition.
             </p>
-            <button><a href="css.html">En savoir plus</a></button>
+            <button><a href="pages/css.html">En savoir plus</a></button>
           </article>
           <!-- article sur le javascript-->
           <article>
@@ -172,7 +161,7 @@
               Il est souvent utilisé pour créer des animations, des formulaires
               interactifs et des mises à jour de contenu en temps réel.
             </p>
-            <button><a href="javascript.html">En savoir plus</a></button>
+            <button><a href="pages/en_construction.html">En savoir plus</a></button>
           </article>
         </div>
         <h2>Les Langages Backend</h2>
@@ -193,7 +182,7 @@
               créer des pages web dynamiques et interactives en s'intégrant
               facilement avec des bases de données.
             </p>
-            <button><a href="php.html">En savoir plus</a></button>
+            <button><a href="pages/en_construction.html">En savoir plus</a></button>
           </article>
           <!-- article sur le kotlin-->
           <article>
@@ -205,146 +194,109 @@
               Kotlin est un langage de programmation moderne qui s'exécute sur
               la machine virtuelle Java (JVM) et est entièrement interopérable
               avec Java. Il est conçu pour être plus concis, expressif et
-              sécurisé que Java, tout en conservant la puissance et la
-              flexibilité de la plateforme Java.
+              sécurisé que Java tout en restant compatible avec l'écosystème
+              existant.
             </p>
-            <button><a href="kotlin.html">En savoir plus</a></button>
+            <button><a href="pages/en_construction.html">En savoir plus</a></button>
           </article>
-          <!-- article sur le python-->
+          <!-- article sur python-->
           <article>
             <i class="fab fa-python pythonColor icon"></i>
-            <h3>Qu'est ce que le python ?</h3>
+            <h3>Qu'est ce que python ?</h3>
             <p>
-              Python est un langage de programmation interprété, interactif et
-              orienté objet. Il est connu pour sa syntaxe claire et sa
-              lisibilité, ce qui en fait un choix populaire pour les débutants
-              et les développeurs expérimentés. Python est utilisé dans divers
-              domaines, tels que le développement web, l'analyse de données,
-              l'intelligence artificielle et l'automatisation des tâches.
+              Python est un langage de programmation polyvalent et facile à
+              apprendre. Il est utilisé pour le développement web, l'analyse de
+              données, l'intelligence artificielle, et bien plus encore.
             </p>
-            <button><a href="python.html">En savoir plus</a></button>
-          </article>
-          <!-- article sur le SQL-->
-          <article>
-            <i class="fas fa-database sqlColor icon"></i>
-            <h3>Qu'est ce que le SQL ?</h3>
-            <p>
-              SQL (Structured Query Language) est un langage de programmation
-              utilisé pour gérer et manipuler des bases de données
-              relationnelles. Il permet d'effectuer des opérations telles que la
-              création, la lecture, la mise à jour et la suppression de données
-              dans une base de données.
-            </p>
-            <button><a href="sql.html">En savoir plus</a></button>
+            <button><a href="pages/en_construction.html">En savoir plus</a></button>
           </article>
         </div>
       </section>
-      <!--
-        La section suivante présente les frameworks, avec un bref aperçu et un lien pour en savoir plus.
-      -->
       <section>
-        <h2>Les Frameworks</h2>
+        <h2>Outils et technologies</h2>
         <p>
-          Les frameworks sont des ensembles d'outils et de bibliothèques qui
-          facilitent le développement d'applications web en fournissant une
-          structure de base et des fonctionnalités prêtes à l'emploi. Ils
-          permettent de gagner du temps et d'améliorer la qualité du code.
-        </p>
-        <article>
-          <i class="fab fa-angular angularColor icon"></i>
-          <h3>Qu'est ce que le framework Angular ?</h3>
-          <p>
-            Angular est un framework JavaScript développé par Google pour la
-            création d'applications web dynamiques et interactives. Il utilise
-            TypeScript comme langage principal et offre des fonctionnalités
-            avancées telles que la liaison de données bidirectionnelle, la
-            gestion des composants et l'injection de dépendances.
-          </p>
-          <button><a href="angular.html">En savoir plus</a></button>
-        </article>
-      </section>
-      <!--
-        La section suivante présente des outils et technologies essentiels pour le développement web.
-        Chaque article fournit une brève description et un lien pour en savoir plus.
-      -->
-      <section>
-        <h2>Outils et Technologies</h2>
-        <p>
-          Cette section présente des outils et technologies essentiels pour le
-          développement web. Ils sont largement utilisés par les développeurs
-          pour améliorer leur productivité et la qualité de leur code.
+          Explorez d'autres outils et technologies essentiels pour le
+          développement web et le DevOps.
         </p>
         <div class="d-flex wrap">
-          <!-- article sur Git-->
           <article>
             <i class="fab fa-git-alt gitColor icon"></i>
-            <h3>Qu'est ce que Git ?</h3>
+            <h3>Git</h3>
             <p>
               Git est un système de contrôle de version distribué qui permet de
-              suivre les modifications apportées aux fichiers et de collaborer
-              efficacement avec d'autres développeurs. Il est largement utilisé
-              dans le développement logiciel pour gérer le code source et
-              faciliter le travail en équipe.
+              suivre l'évolution du code source et de collaborer efficacement.
             </p>
-            <button><a href="git.html">En savoir plus</a></button>
+            <button><a href="pages/en_construction.html">En savoir plus</a></button>
           </article>
-          <!-- article sur GitHub-->
           <article>
             <i class="fab fa-github githubColor icon"></i>
-            <h3>Qu'est ce que GitHub ?</h3>
+            <h3>GitHub</h3>
             <p>
-              GitHub est une plateforme de développement collaboratif qui
-              utilise Git pour le contrôle de version. Elle permet aux
-              développeurs de stocker, partager et collaborer sur des projets de
-              code source. GitHub offre également des fonctionnalités telles que
-              la gestion des problèmes, les demandes de tirage (pull requests)
-              et l'intégration continue.
+              GitHub est une plateforme de partage de code qui facilite la
+              collaboration et l'intégration continue.
             </p>
-            <button><a href="github.html">En savoir plus</a></button>
+            <button><a href="pages/en_construction.html">En savoir plus</a></button>
           </article>
-
-          <!-- article sur linux-->
-          <article>
-            <i class="fab fa-linux linuxColor icon"></i>
-            <h3>Qu'est ce que Linux ?</h3>
-            <p>
-              Linux est un système d'exploitation open source basé sur le noyau
-              Linux. Il est largement utilisé dans les serveurs, les
-              superordinateurs et les appareils embarqués. Linux est connu pour
-              sa stabilité, sa sécurité et sa flexibilité, ce qui en fait un
-              choix populaire pour les développeurs et les entreprises.
-            </p>
-            <button><a href="linux.html">En savoir plus</a></button>
-          </article>
-          <!-- article sur ligne de commande linux-->
           <article>
             <i class="fas fa-terminal terminalColor icon"></i>
-            <h3>Qu'est ce que la ligne de commande Linux ?</h3>
+            <h3>Terminal Linux</h3>
             <p>
-              La ligne de commande Linux est une interface textuelle qui permet
-              aux utilisateurs d'interagir avec le système d'exploitation en
-              saisissant des commandes. Elle offre un moyen puissant et flexible
-              de gérer les fichiers, d'exécuter des programmes et d'automatiser
-              des tâches. La ligne de commande est particulièrement appréciée
-              par les administrateurs système et les développeurs pour sa
-              rapidité et son efficacité.
+              Découvrez les commandes essentielles du terminal Linux pour gérer
+              vos projets et vos serveurs.
             </p>
-            <button>
-              <a href="linux_command_line.html">En savoir plus</a>
-            </button>
+            <button><a href="pages/linux_command_line.html">Mémento Linux</a></button>
           </article>
         </div>
       </section>
     </main>
-    <!--
-      Le footer (<footer>) est la section de pied de page de la page.
-      Il contient généralement des informations supplémentaires comme les droits d'auteur, les liens vers les politiques de confidentialité, etc.
-      Ici, il affiche un message de droits d'auteur.
-    -->
+    <!-- footer -->
     <footer>
-      <p>&copy; 2023 COURS SIO WEB LDV Melun. Tous droits réservés.</p>
+      <section
+        class="contact-footer"
+        aria-labelledby="footer-contact-title"
+      >
+        <h2 id="footer-contact-title">Contactez l'équipe pédagogique</h2>
+        <form action="#" method="post" class="contact-form">
+          <label for="footer-name"
+            >Nom
+            <input
+              id="footer-name"
+              name="footer-name"
+              type="text"
+              placeholder="Votre nom"
+              required
+            />
+          </label>
+          <label for="footer-email"
+            >Email
+            <input
+              id="footer-email"
+              name="footer-email"
+              type="email"
+              placeholder="vous@example.com"
+              required
+            />
+          </label>
+          <label for="footer-message"
+            >Message
+            <textarea
+              id="footer-message"
+              name="footer-message"
+              placeholder="Expliquez votre besoin"
+              required
+            ></textarea>
+          </label>
+          <button type="submit">Envoyer</button>
+        </form>
+        <p class="footer-note">
+          Les captures d'écran et documents justificatifs doivent être intégrés
+          dans votre dossier PDF final, sans être ajoutés au dépôt Git.
+        </p>
+      </section>
+      <!-- définition des droits d'auteur -->
+      <p>&copy; 2024 COURS SIO WEB LDV Melun. Tous droits réservés.</p>
     </footer>
-    <!-- script en bas de page aprés le footer-->
+    <!-- script -->
     <script src="js/main.js"></script>
   </body>
 </html>

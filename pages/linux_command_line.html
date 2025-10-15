@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <link rel="stylesheet" href="../css/linux_command_line.css" />
+    <title>COURS SIO WEB | Commandes Linux</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Logo</div>
+        <div class="menu" id="menu">
+          <a href="../index.html">Accueil</a>
+          <a href="html.html">HTML</a>
+          <a href="css.html">CSS</a>
+          <a href="linux_command_line.html" aria-current="page"
+            >Commandes Linux</a
+          >
+          <a href="en_construction.html">Autres pages</a>
+          <a href="dossier_remise.html">Dossier à remettre</a>
+        </div>
+        <div
+          class="burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Mémento des commandes Linux</h1>
+        <p>
+          Retrouvez les commandes essentielles pour naviguer, manipuler des
+          fichiers et gérer les processus dans un terminal Linux. Utilisez ce
+          mémo comme aide-mémoire pendant vos travaux pratiques.
+        </p>
+      </section>
+      <section class="tips">
+        <article class="tip-card">
+          <h3>Conseil</h3>
+          <p>
+            Combinez les options pour gagner du temps. Par exemple
+            <code>ls -lah</code> affiche les fichiers cachés, avec détails et une
+            taille lisible.
+          </p>
+        </article>
+        <article class="tip-card">
+          <h3>Astuces de productivité</h3>
+          <p>
+            Naviguez rapidement dans l'historique avec <code>Ctrl + R</code> et
+            utilisez les flèches haut/bas pour rejouer une commande précédente.
+          </p>
+        </article>
+      </section>
+      <section class="commands-table">
+        <table>
+          <caption>Commandes vues en SISR</caption>
+          <thead>
+            <tr>
+              <th scope="col">Commande</th>
+              <th scope="col">Description</th>
+              <th scope="col">Exemple d'utilisation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>ls</code></td>
+              <td>Liste les fichiers et dossiers</td>
+              <td><code>ls -l</code></td>
+            </tr>
+            <tr>
+              <td><code>cd</code></td>
+              <td>Change de répertoire courant</td>
+              <td><code>cd /home/user</code></td>
+            </tr>
+            <tr>
+              <td><code>pwd</code></td>
+              <td>Affiche le chemin du dossier actuel</td>
+              <td><code>pwd</code></td>
+            </tr>
+            <tr>
+              <td><code>mkdir</code></td>
+              <td>Crée un nouveau dossier</td>
+              <td><code>mkdir projets</code></td>
+            </tr>
+            <tr>
+              <td><code>rm</code></td>
+              <td>Supprime un fichier</td>
+              <td><code>rm notes.txt</code></td>
+            </tr>
+            <tr>
+              <td><code>rm -r</code></td>
+              <td>Supprime un dossier et son contenu</td>
+              <td><code>rm -r ancien_projet</code></td>
+            </tr>
+            <tr>
+              <td><code>cp</code></td>
+              <td>Copie un fichier ou un dossier</td>
+              <td><code>cp source.txt sauvegarde.txt</code></td>
+            </tr>
+            <tr>
+              <td><code>mv</code></td>
+              <td>Déplace ou renomme un fichier</td>
+              <td><code>mv rapport.md archives/rapport.md</code></td>
+            </tr>
+            <tr>
+              <td><code>cat</code></td>
+              <td>Affiche le contenu d'un fichier</td>
+              <td><code>cat notes.txt</code></td>
+            </tr>
+            <tr>
+              <td><code>grep</code></td>
+              <td>Recherche une chaîne dans un fichier</td>
+              <td><code>grep "erreur" logs.txt</code></td>
+            </tr>
+            <tr>
+              <td><code>chmod</code></td>
+              <td>Modifie les permissions d'un fichier</td>
+              <td><code>chmod 755 script.sh</code></td>
+            </tr>
+            <tr>
+              <td><code>sudo</code></td>
+              <td>Exécute une commande avec les droits administrateur</td>
+              <td><code>sudo apt update</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-legend">
+          L'attribut <code>&lt;caption&gt;</code> décrit le tableau, tandis que
+          <code>&lt;th&gt;</code> définit les en-têtes pour chaque colonne afin de
+          clarifier leur rôle.
+        </p>
+      </section>
+      <section class="shortcuts">
+        <h2>Raccourcis clavier utiles</h2>
+        <ul>
+          <li><strong>Ctrl + C</strong> : interrompt la commande en cours.</li>
+          <li><strong>Ctrl + L</strong> : nettoie le terminal.</li>
+          <li><strong>Tab</strong> : autocomplète fichiers et dossiers.</li>
+          <li>
+            <strong>Flèche haut/bas</strong> : parcourt l'historique des commandes.
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <section
+        class="contact-footer"
+        aria-labelledby="footer-contact-title"
+      >
+        <h2 id="footer-contact-title">Contactez l'équipe pédagogique</h2>
+        <form action="#" method="post" class="contact-form">
+          <label for="footer-name-linux"
+            >Nom
+            <input
+              id="footer-name-linux"
+              name="footer-name"
+              type="text"
+              placeholder="Votre nom"
+              required
+            />
+          </label>
+          <label for="footer-email-linux"
+            >Email
+            <input
+              id="footer-email-linux"
+              name="footer-email"
+              type="email"
+              placeholder="vous@example.com"
+              required
+            />
+          </label>
+          <label for="footer-message-linux"
+            >Message
+            <textarea
+              id="footer-message-linux"
+              name="footer-message"
+              placeholder="Expliquez votre besoin"
+              required
+            ></textarea>
+          </label>
+          <button type="submit">Envoyer</button>
+        </form>
+        <p class="footer-note">
+          Insérez vos captures d'écran uniquement dans la version PDF du dossier
+          final pour conserver le dépôt léger.
+        </p>
+      </section>
+      <p>&copy; 2024 COURS SIO WEB LDV Melun. Tous droits réservés.</p>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

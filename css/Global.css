@@ -3,38 +3,82 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: lightblue;
+  background-color: #f4f7fb;
+  color: #1f2933;
 }
-head {
-  background-color: #982323;
-  color: #eadada;
+
+main {
+  padding: 20px;
+  background-color: #f4f7fb;
 }
+
+main > section {
+  margin-bottom: 32px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 12px 40px -24px rgba(15, 30, 45, 0.55);
+}
+
+h1,
+h2,
+h3 {
+  color: #0f172a;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Liens */
+a {
+  color: #1d4ed8;
+}
+
+a:hover,
+a:focus {
+  color: #0b5fd3;
+  text-decoration: underline;
+}
+
 /* En-tête */
-/* nav */
-/* Barre de navigation */
 nav {
-  background-color: #333;
+  background-color: #0f172a;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
 }
 
-/* Logo ou titre */
 .logo {
-  color: white;
+  color: #f8fafc;
   font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
-/* Menu */
 .menu {
   display: flex;
-  gap: 15px;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .menu a {
-  color: white;
+  color: #f8fafc;
   text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a[aria-current="page"] {
+  background-color: #1d4ed8;
+}
+
+.menu a:hover,
+.menu a:focus {
+  background-color: #1d4ed8;
+  color: #ffffff;
 }
 
 /* Menu burger */
@@ -47,146 +91,342 @@ nav {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: white;
+  background-color: #f8fafc;
   margin: 4px 0;
 }
 
 /* Styles mobiles */
-@media (max-width: 1000px) {
-  /* cacher le menu horizontal */
+@media (max-width: 960px) {
   .menu {
     display: none;
     flex-direction: column;
-    background-color: #444;
+    background-color: #0f172a;
     position: absolute;
     top: 60px;
     right: 20px;
-    width: 200px;
-    padding: 10px;
-    z-index: 1;
+    width: 240px;
+    padding: 20px 16px;
+    border-radius: 16px;
+    box-shadow: 0 24px 48px -18px rgba(15, 30, 45, 0.45);
   }
 
-  /* afficher le menu quand ouvert */
   .menu.show {
     display: flex;
   }
 
-  /* Afficher le burger */
+  .menu a {
+    width: 100%;
+  }
+
   .burger {
     display: flex;
   }
 }
-/* Styles pour le contenu principal dans le*/
-main {
-  padding: 20px;
-  background-color: #f4f4f4;
-}
-/* 
-    Les articles sont initialement déplacés vers la gauche et transparents.
-    La transition permet un effet de fade-in et de glissement lors de l'ajout de la classe fade-in.
-    will-change optimise les performances pour les propriétés transform et opacity.
-*/
+
+/* Articles */
 article {
-  /* fait entrer les articles par la gauche */
   transform: translateX(-100%);
   opacity: 0;
   transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.8s;
   will-change: transform, opacity;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 24px 40px -24px rgba(15, 30, 45, 0.35);
+  padding: 24px;
+  margin: 20px auto;
+  max-width: 640px;
 }
 
 article.fade-in {
   transform: translateX(0);
   opacity: 1;
 }
-article {
-  padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  max-width: 600px;
-}
-/* class pour le conteneur flexible (parent) pour les articles */
+
 .d-flex {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
+  gap: 24px;
 }
-/* wrap articles : permet de les aligner en colonnes sur les petits écrans. class combiné avec .d-flex */
+
 .wrap {
   flex-wrap: wrap;
 }
-/* class pour les boutons */
+
+.d-flex article {
+  flex: 1 1 280px;
+}
+
 button {
-  background-color: #4caf50;
+  background-color: #2563eb;
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+button:hover,
+button:focus {
+  background-color: #1d4ed8;
+}
+
 button a {
   color: white;
   text-decoration: none;
 }
-/* couleur des icônes */
+
+/* Couleur des icônes */
 .htmlColor {
   color: #e44d26;
 }
+
 .cssColor {
   color: #2965f1;
 }
+
 .jsColor {
   color: #f7df1e;
 }
+
 .phpColor {
   color: #8993be;
 }
+
 .kotlinColor {
   color: #0095d5;
 }
+
 .pythonColor {
   color: #3776ab;
 }
+
 .gitColor {
   color: #f05032;
 }
+
 .githubColor {
   color: #181717;
 }
+
 .sqlColor {
   color: #e34f26;
 }
+
 .linuxColor {
   color: #fcc624;
 }
+
 .terminalColor {
   color: #4d4d4d;
 }
+
 .angularColor {
   color: #dd0031;
 }
-/* class pour les tailles d'icônes */
+
 .icon {
   font-size: 3rem;
 }
+
 .icon-small {
   font-size: 16px;
 }
+
 .icon-large {
   font-size: 32px;
 }
-/* class pour les logos */
+
 .kotlinLogo {
   width: 3rem;
   height: auto;
 }
-/* class pour le pied de page */
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #f1f1f1;
-  bottom: 0;
+
+/* Tableaux */
+table {
   width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+table caption {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+table th,
+table td {
+  border: 1px solid #cbd5e1;
+  padding: 12px;
+  text-align: left;
+}
+
+table th {
+  background: linear-gradient(120deg, #1d4ed8, #0ea5e9);
+  color: #ffffff;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+/* Formulaires */
+form {
+  display: grid;
+  gap: 12px;
+}
+
+label {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+input,
+textarea,
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-footer {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  padding: 32px 20px 16px;
+}
+
+.contact-footer h2 {
+  color: #e0f2fe;
+  margin-top: 0;
+}
+
+.contact-footer form {
+  gap: 16px;
+}
+
+.contact-footer label {
+  color: #cbd5f5;
+}
+
+.contact-footer input,
+.contact-footer textarea {
+  background-color: #1e293b;
+  color: #f8fafc;
+  border-color: #334155;
+}
+
+.contact-footer button {
+  justify-self: start;
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.contact-footer button:hover,
+.contact-footer button:focus {
+  background-color: #0ea5e9;
+  color: #ffffff;
+}
+
+footer p {
+  margin: 0;
+  padding: 16px 20px;
+  text-align: center;
+  background-color: #e2e8f0;
+  color: #334155;
+}
+
+/* Grilles et encarts pour les consignes */
+.notice {
+  background-color: #fef3c7;
+  border-left: 6px solid #f59e0b;
+  padding: 16px 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+}
+
+.checklist li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #22c55e;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+@media (min-width: 880px) {
+  .grid.two-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 16px 36px -24px rgba(15, 30, 45, 0.3);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.screenshot-hint {
+  background: #dbeafe;
+  color: #1e3a8a;
+  border-left: 6px solid #1d4ed8;
+  padding: 16px 20px;
+  border-radius: 12px;
+}
+
+.table-legend {
+  font-size: 0.9rem;
+  color: #475569;
+  margin-top: 8px;
+}
+
+.footer-note {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+@media (max-width: 680px) {
+  main > section {
+    padding: 16px;
+  }
+
+  article {
+    padding: 16px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
 }

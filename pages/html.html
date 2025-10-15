@@ -13,18 +13,11 @@
         <div class="logo">Logo</div>
         <div class="menu" id="menu">
           <a href="../index.html">Accueil</a>
-          <a href="html.html">HTML</a>
+          <a href="html.html" aria-current="page">HTML</a>
           <a href="css.html">CSS</a>
-          <a href="javascript.html">JavaScript</a>
-          <a href="php.html">PHP</a>
-          <a href="kotlin.html">Kotlin</a>
-          <a href="python.html">Python</a>
-          <a href="sql.html">SQL</a>
-          <a href="angular.html">Angular</a>
-          <a href="git.html">Git</a>
-          <a href="github.html">GitHub</a>
-          <a href="linux.html">Linux</a>
-          <a href="linux_command_line.html">Ligne de commande Linux</a>
+          <a href="linux_command_line.html">Commandes Linux</a>
+          <a href="en_construction.html">Autres pages</a>
+          <a href="dossier_remise.html">Dossier à remettre</a>
         </div>
         <div
           class="burger"
@@ -42,26 +35,28 @@
     </header>
     <!-- Contenu principal -->
     <main>
-      <h1>Introduction à HTML</h1>
-      <p>
-        L'HTML a été créé par Tim Berners-Lee, un ingénieur britannique, en
-        1991. Il a développé cette technologie pour permettre aux chercheurs du
-        monde entier de partager facilement des documents et des informations
-        via Internet.
-      </p>
-      <p>
-        Tim Berners-Lee a conçu l'HTML dans le but de structurer et de présenter
-        des informations sur le web. Il voulait créer un langage qui soit simple
-        à utiliser, permettant aux utilisateurs de créer des pages web sans
-        avoir besoin de connaissances techniques approfondies. L'objectif
-        principal était de faciliter ainsi la navigation, la mise en page, et le
-        partage d'informations.
-      </p>
-      <p>
-        HTML (HyperText Markup Language) est le langage utilisé pour créer des
-        pages web. Il permet de structurer du contenu en utilisant des balises
-        et d'ajouter des attributs pour enrichir ces éléments.
-      </p>
+      <section>
+        <h1>Introduction à HTML</h1>
+        <p>
+          L'HTML a été créé par Tim Berners-Lee, un ingénieur britannique, en
+          1991. Il a développé cette technologie pour permettre aux chercheurs du
+          monde entier de partager facilement des documents et des informations
+          via Internet.
+        </p>
+        <p>
+          Tim Berners-Lee a conçu l'HTML dans le but de structurer et de présenter
+          des informations sur le web. Il voulait créer un langage qui soit simple
+          à utiliser, permettant aux utilisateurs de créer des pages web sans
+          avoir besoin de connaissances techniques approfondies. L'objectif
+          principal était de faciliter la navigation, la mise en page, et le
+          partage d'informations.
+        </p>
+        <p>
+          HTML (HyperText Markup Language) est le langage utilisé pour créer des
+          pages web. Il permet de structurer du contenu en utilisant des balises
+          et d'ajouter des attributs pour enrichir ces éléments.
+        </p>
+      </section>
       <!-- section explication balise et attribut  -->
       <section>
         <h2>Les balises HTML</h2>
@@ -110,6 +105,55 @@
         </pre>
       </section>
       <section>
+        <h2>Formulaire commenté</h2>
+        <p>
+          Le formulaire suivant illustre l'utilisation des attributs <code>name</code>,
+          <code>required</code>, <code>method</code> et <code>action</code>. Chaque
+          élément est commenté afin de clarifier son rôle.
+        </p>
+        <form action="#" method="post">
+          <!-- Champ pour saisir le nom de l'utilisateur -->
+          <label for="username"
+            >Nom
+            <input
+              id="username"
+              name="username"
+              type="text"
+              required
+              placeholder="Votre nom complet"
+            />
+          </label>
+          <!-- Champ de type email pour saisir l'adresse de contact -->
+          <label for="user-email"
+            >Email
+            <input
+              id="user-email"
+              name="user-email"
+              type="email"
+              required
+              placeholder="prenom.nom@example.com"
+            />
+          </label>
+          <!-- Zone de texte libre pour des commentaires détaillés -->
+          <label for="user-message"
+            >Commentaires
+            <textarea
+              id="user-message"
+              name="user-message"
+              required
+              placeholder="Partagez votre retour sur le cours"
+            ></textarea>
+          </label>
+          <!-- Bouton pour transmettre les informations saisies -->
+          <button type="submit">Envoyer le formulaire</button>
+        </form>
+        <p class="table-legend">
+          Attributs utilisés : <strong>method</strong> définit la manière dont les données sont envoyées,
+          <strong>action</strong> précise l'URL cible, <strong>required</strong> rend un champ obligatoire et
+          <strong>name</strong> nomme chaque donnée pour son traitement côté serveur.
+        </p>
+      </section>
+      <section>
         <h2>Ressources supplémentaires</h2>
         <ul>
           <li>
@@ -130,10 +174,52 @@
     </main>
     <!-- footer -->
     <footer>
+      <section
+        class="contact-footer"
+        aria-labelledby="footer-contact-title"
+      >
+        <h2 id="footer-contact-title">Contactez l'équipe pédagogique</h2>
+        <form action="#" method="post" class="contact-form">
+          <label for="footer-name-html"
+            >Nom
+            <input
+              id="footer-name-html"
+              name="footer-name"
+              type="text"
+              placeholder="Votre nom"
+              required
+            />
+          </label>
+          <label for="footer-email-html"
+            >Email
+            <input
+              id="footer-email-html"
+              name="footer-email"
+              type="email"
+              placeholder="vous@example.com"
+              required
+            />
+          </label>
+          <label for="footer-message-html"
+            >Message
+            <textarea
+              id="footer-message-html"
+              name="footer-message"
+              placeholder="Expliquez votre besoin"
+              required
+            ></textarea>
+          </label>
+          <button type="submit">Envoyer</button>
+        </form>
+        <p class="footer-note">
+          Conservez vos captures d'écran en local et intégrez-les dans le PDF
+          final plutôt que dans le dépôt Git.
+        </p>
+      </section>
       <!-- définition des droits d'auteur -->
-      <p>&copy; 2023 COURS SIO WEB LDV Melun. Tous droits réservés.</p>
+      <p>&copy; 2024 COURS SIO WEB LDV Melun. Tous droits réservés.</p>
     </footer>
     <!-- script -->
-    <script src="../js/script.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
