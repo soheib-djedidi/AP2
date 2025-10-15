@@ -5,6 +5,14 @@
 Pour assurer votre apprentissage lors de vos années en BTS SIO, vous avez décidez de faire un site qui contiendra l'ensemble des connaissances vu lors des cours technique (SISR, SLAM). le site doit être responsive. la page d'accueil regroupe l'ensembles des élèments techniques classé dans des sections. chaque élèment est un article avec le logo, un titre (nom de la tech), un paragraphe qui résume le future contenu de la page et un bouton qui permet de ce rentre sur cette page (utilisation de la balise <a>....</a>)
 un certain nombre d'articles(<article></article>) sont déjà présent. Quand une nouvelle technologie est ajouté on doit aussi rajouter le lien dans la navigation.
 
+## Dossier de remise
+
+- Une page dédiée `pages/dossier_remise.html` centralise les consignes administratives : formats attendus, convention de nommage `AP-<classe>-<nom>-<contenu>.<type>`, dépôt sur ENT et modèle d'e-mail.
+- Un modèle de rapport est disponible dans `docs/AP-SIO11-NomEtudiant-document-technique.md` pour préparer l'export PDF avec les explications exigées. Ajoutez vos propres captures d'écran lors de la génération du PDF sans les versionner dans le dépôt (les plateformes de revue refusent les binaires volumineux).
+- Avant la remise, créer une archive `AP-Classe-Nom-mini-site.zip` contenant l'intégralité du projet et joindre également le document PDF explicatif.
+
+
+
 Explications des balises utilisées dans ce projet: voir cours.html
 Realisation d'un formulaire : formulaire.html
 Explication du css : style.css

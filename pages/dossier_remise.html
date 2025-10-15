@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <title>COURS SIO WEB | Dossier à remettre</title>
+  </head>
+  <body>
+    <header>
+      <nav class="site-nav">
+        <div class="logo">Logo</div>
+        <ul class="menu" id="menu">
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="html.html">HTML</a></li>
+          <li><a href="css.html">CSS</a></li>
+          <li><a href="linux_command_line.html">Commandes Linux</a></li>
+          <li><a href="en_construction.html">Autres pages</a></li>
+          <li>
+            <a href="dossier_remise.html" aria-current="page">Dossier à remettre</a>
+          </li>
+        </ul>
+        <div
+          class="burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <main class="dossier-main">
+      <section class="hero">
+        <h1>Dossier de remise – Atelier Professionnel BTS SIO</h1>
+        <p>
+          Cette page rassemble toutes les consignes du document « Atelier
+          Professionnel : Réalisation d’un mini-site web SISR – Dossier à
+          remettre ». Utilisez-la comme guide pour préparer vos livrables et
+          garantir une présentation professionnelle.
+        </p>
+      </section>
+
+      <section class="requirements">
+        <h2>Format des documents</h2>
+        <p>
+          Respectez strictement la convention de nommage suivante pour chaque
+          fichier transmis.
+        </p>
+        <div class="requirements-grid">
+          <article>
+            <h3>Structure de nommage</h3>
+            <p>
+              <span class="file-name-example">AP-&lt;classe&gt;-&lt;nom&gt;-&lt;contenu&gt;.&lt;type&gt;</span>
+            </p>
+            <ul>
+              <li><strong>&lt;classe&gt;</strong> → SIO11 ou SIO12</li>
+              <li><strong>&lt;nom&gt;</strong> → votre nom de famille</li>
+              <li><strong>&lt;contenu&gt;</strong> → description courte (ex. html-css)</li>
+              <li><strong>&lt;type&gt;</strong> → extension du fichier (zip, pdf…)</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Formats attendus</h3>
+            <ul>
+              <li>Documents textuels exportés au format <strong>PDF</strong>.</li>
+              <li>Mini-site compressé dans une archive <strong>ZIP</strong>.</li>
+              <li>Captures d'écran insérées et légendées dans le document PDF.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Exemple complet</h3>
+            <p>
+              <code>AP-SIO11-Durand-mini-site.zip</code><br />
+              <code>AP-SIO11-Durand-document-technique.pdf</code>
+            </p>
+            <p>
+              Pensez à vérifier l’orthographe avant l’envoi pour éviter tout
+              rejet administratif.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="deliverables">
+        <h2>Contenu du dossier à remettre</h2>
+        <div class="deliverables-grid">
+          <article>
+            <h3>Archive du mini-site</h3>
+            <p>
+              Incluez l’intégralité des fichiers HTML, CSS, JavaScript et
+              ressources (images, polices…). Gardez l’arborescence du projet afin
+              que l’enseignant puisse lancer le site immédiatement.
+            </p>
+          </article>
+          <article>
+            <h3>Document explicatif</h3>
+            <p>
+              Décrivez vos choix techniques, les attributs HTML clés et ajoutez
+              un lien vers le dépôt Git si le code est partagé en ligne. Les
+              captures d’écran doivent illustrer :</p>
+            <ul>
+              <li>Les corrections effectuées</li>
+              <li>La table des commandes Linux et ses balises</li>
+              <li>Le formulaire de contact du footer</li>
+              <li>Un aperçu de chaque page créée</li>
+            </ul>
+            <p>
+              <strong>Astuce&nbsp;:</strong> conservez vos captures d’écran en local et
+              intégrez-les uniquement dans le document PDF final. Évitez de les
+              ajouter au dépôt Git pour ne pas bloquer la création d’une demande
+              d’extraction à cause de fichiers binaires.
+            </p>
+            <p>
+              Chaque capture doit comporter une légende claire pour faciliter
+              l’évaluation lors de l’export PDF.
+            </p>
+          </article>
+          <article>
+            <h3>Explications imposées</h3>
+            <p>Dans le document PDF, n’oubliez pas d’expliquer :</p>
+            <dl>
+              <dt>method</dt>
+              <dd>Méthode HTTP utilisée lors de l’envoi du formulaire.</dd>
+              <dt>action</dt>
+              <dd>Adresse vers laquelle les données sont transmises.</dd>
+              <dt>required</dt>
+              <dd>Obligation de remplir un champ avant l’envoi.</dd>
+              <dt>name</dt>
+              <dd>Identifiant unique de la donnée reçue côté serveur.</dd>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <section class="callout-section">
+        <h2>Checklist rapide avant envoi</h2>
+        <ol class="checklist">
+          <li>Vérifier la présence de toutes les pages du mini-site.</li>
+          <li>Contrôler les liens de navigation et le formulaire de contact.</li>
+          <li>Exporter le document justificatif en PDF avec légendes.</li>
+          <li>Compresser le site dans une archive ZIP correctement nommée.</li>
+          <li>Insérer l’archive et le PDF dans un dossier unique respectant la convention.</li>
+        </ol>
+      </section>
+
+      <section class="submission">
+        <h2>Remise du dossier</h2>
+        <p>
+          Le dossier final (ZIP + PDF) doit être déposé sur la plateforme fournie
+          par les enseignants et envoyé par mail via l’ENT. Utilisez une adresse
+          professionnelle et un objet explicite.
+        </p>
+        <div class="email-guidelines">
+          <article>
+            <h3>Adresse et objet</h3>
+            <ul>
+              <li>Adresse d’expéditeur de type <code>prenom.nom@domaine.fr</code>.</li>
+              <li>Nom affiché : <strong>Prénom Nom</strong>.</li>
+              <li>Objet recommandé : <em>Remise dossier AP – Nom Prénom – Classe</em>.</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Contenu du mail</h3>
+            <p>Respectez la structure suivante :</p>
+            <pre>
+Bonjour,
+
+Veuillez trouver ci-joint le dossier « Atelier Professionnel – Mini-site SISR ».
+Il contient l'archive ZIP du site ainsi que le document technique au format PDF.
+
+Cordialement,
+Nom Prénom – Classe
+            </pre>
+          </article>
+        </div>
+      </section>
+
+      <section class="resources">
+        <h2>Ressources utiles</h2>
+        <ul>
+          <li>
+            <a href="../docs/AP-SIO11-NomEtudiant-document-technique.md"
+              >Modèle de document justificatif (version Markdown)</a
+            >
+          </li>
+          <li>
+            <a href="https://www.service-public.fr/particuliers/vosdroits/F200"
+              >Rappels sur l'usage d'une adresse électronique professionnelle</a
+            >
+          </li>
+          <li>
+            <a href="https://support.google.com/a/answer/33314?hl=fr"
+              >Conseils de rédaction d'e-mails professionnels</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>&copy; 2023 COURS SIO WEB LDV Melun. Tous droits réservés.</p>
+      <section class="footer-contact">
+        <h2>Contact</h2>
+        <form action="#" method="post" class="contact-form">
+          <div class="contact-field">
+            <label for="contact-name">Nom</label>
+            <input
+              type="text"
+              id="contact-name"
+              name="contact-name"
+              placeholder="Votre nom"
+              required
+            />
+          </div>
+          <div class="contact-field">
+            <label for="contact-email">Email</label>
+            <input
+              type="email"
+              id="contact-email"
+              name="contact-email"
+              placeholder="nom@example.com"
+              required
+            />
+          </div>
+          <div class="contact-field">
+            <label for="contact-message">Message</label>
+            <textarea
+              id="contact-message"
+              name="contact-message"
+              rows="3"
+              placeholder="Votre message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
