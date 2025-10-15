@@ -112,3 +112,15 @@ https://css-tricks.com/guides/
 
 Videos :
 https://www.youtube.com/c/FromScratchD%C3%A9veloppementWeb
+
+## Consignes de remise
+
+- Respecter le format de nommage `AP-<classe>-<nom>-<contenu>.<type>` pour chaque document.
+- Le mini-site doit être compressé dans une archive `AP-Classe-Nom-mini-site.zip` livrée dans le dossier final.
+- Rédiger un document technique au format PDF (modèle : `docs/AP-SIO11-NomEtudiant-document-technique.md`).
+- Insérer les captures d'écran annotées uniquement lors de l'export PDF et ne pas les ajouter au dépôt Git.
+- Lors de l'envoi par mail via l'ENT :
+  - Utiliser une adresse professionnelle (ex. `prenom.nom@domaine.fr`).
+  - Rédiger un objet explicite (ex. « Remise AP SISR – Nom Prénom »).
+  - Ajouter un message d'accompagnement court et une formule de politesse.
+

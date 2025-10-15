@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <title>COURS SIO WEB | Dossier à remettre</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Logo</div>
+        <div class="menu" id="menu">
+          <a href="../index.html">Accueil</a>
+          <a href="html.html">HTML</a>
+          <a href="css.html">CSS</a>
+          <a href="linux_command_line.html">Commandes Linux</a>
+          <a href="en_construction.html">Autres pages</a>
+          <a href="dossier_remise.html" aria-current="page">Dossier à remettre</a>
+        </div>
+        <div
+          class="burger"
+          id="burger"
+          aria-label="Menu"
+          aria-expanded="false"
+          role="button"
+          tabindex="0"
+        >
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Livrables attendus</h1>
+        <p>
+          Suivez ces consignes pour préparer votre dossier d'Atelier Professionnel.
+          Toutes les pièces doivent respecter les règles de nommage, de format et de
+          présentation ci-dessous.
+        </p>
+        <div class="notice">
+          <p>
+            Format du nom de fichier : <strong>AP-&lt;classe&gt;-&lt;nom&gt;-&lt;contenu&gt;.&lt;type&gt;</strong>
+            (exemple : <em>AP-SIO11-Dupont-html-css.pdf</em>).
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2>Checklist du dossier</h2>
+        <ul class="checklist">
+          <li>Archive ZIP complète du mini-site (code HTML, CSS, ressources légères).</li>
+          <li>Document PDF expliquant les choix techniques et les attributs HTML utilisés.</li>
+          <li>Captures d'écran annotées des corrections et des pages créées, insérées dans le PDF.</li>
+          <li>Explication des attributs de formulaire : <code>method</code>, <code>action</code>, <code>required</code>, <code>name</code>.</li>
+          <li>Présentation pas-à-pas de la liaison CSS/HTML et justification de cette organisation.</li>
+        </ul>
+      </section>
+      <section class="grid two-columns">
+        <article class="card">
+          <h3>Gestion des captures</h3>
+          <p>
+            Conservez vos captures d'écran localement. Insérez-les dans le PDF final
+            avec une légende décrivant la correction montrée. Ne les ajoutez pas au
+            dépôt Git pour éviter les conflits liés aux fichiers binaires.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Explications à fournir</h3>
+          <p>
+            Décrivez le rôle des attributs de formulaires, les balises de votre tableau Linux
+            et la méthode utilisée pour lier les feuilles de style. Précisez pourquoi la
+            séparation HTML / CSS facilite la maintenance et la réutilisation du code.
+          </p>
+        </article>
+      </section>
+      <section>
+        <h2>Communication professionnelle</h2>
+        <p>
+          Lors de l'envoi par mail via l'ENT, utilisez une adresse au format professionnel
+          (ex. <em>prenom.nom@domaine.fr</em>). Le message doit comprendre :
+        </p>
+        <ul class="checklist">
+          <li>Un objet clair (ex. « Remise AP SISR – Nom Prénom »).</li>
+          <li>Une salutation initiale professionnelle.</li>
+          <li>Un texte court décrivant la pièce jointe et son objectif.</li>
+          <li>Une formule de politesse finale.</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <section
+        class="contact-footer"
+        aria-labelledby="footer-contact-title"
+      >
+        <h2 id="footer-contact-title">Contactez l'équipe pédagogique</h2>
+        <form action="#" method="post" class="contact-form">
+          <label for="footer-name-dossier"
+            >Nom
+            <input
+              id="footer-name-dossier"
+              name="footer-name"
+              type="text"
+              placeholder="Votre nom"
+              required
+            />
+          </label>
+          <label for="footer-email-dossier"
+            >Email
+            <input
+              id="footer-email-dossier"
+              name="footer-email"
+              type="email"
+              placeholder="vous@example.com"
+              required
+            />
+          </label>
+          <label for="footer-message-dossier"
+            >Message
+            <textarea
+              id="footer-message-dossier"
+              name="footer-message"
+              placeholder="Expliquez votre besoin"
+              required
+            ></textarea>
+          </label>
+          <button type="submit">Envoyer</button>
+        </form>
+        <p class="footer-note">
+          Pour toute question sur la remise, joignez un résumé dans le message et
+          conservez les pièces jointes au format demandé.
+        </p>
+      </section>
+      <p>&copy; 2024 COURS SIO WEB LDV Melun. Tous droits réservés.</p>
+    </footer>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

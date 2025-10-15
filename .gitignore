@@ -1,0 +1,9 @@
+# Ignore binary deliverables that block pull requests
+*.pdf
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
